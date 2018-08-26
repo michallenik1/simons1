@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Find Your Wifi Hotspots</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+
+<div class="gray-bg hidden"></div>
+<div class="wifi-popup hidden">
+	<div class="wifi-content">
+		<div class="close"><a href="#"><img src="images/close.svg" /></a></div>
+		<h3>Local Hotspots for Zip (<span class="zip"></span>)</h3>
+		<ul>
+			<li>TheHotspot - <span class="excellent">Excellent</span></li>
+			<li>HardlyWorking - <span class="fair">Fair</span></li>
+			<li>KittyKat - <span class="poor">Poor</span></li>
+		</ul>
+	</div> <!-- close wifi content-->
+</div>
+
+<section class="page-container">
+	<article class="header">
+		<div class="logo">
+			<a href="index.html">Find Your Wifi <span class=""><img src="images/wifi-icon.svg" /></span></a></div>
+	</article>
+
+<section class="banner">
+	<article class="zip-finder-wrapper">
+		<div class="zip-finder">
+			<form>
+				<h1>Planning a vacation?</h1>
+				<h2>Find the best areas with wifi hotspots.<h2>
+					<p>We'll show you all the open hotspots in any US location so you don't have to worry about connectivity on your next trip. </p>
+				<label for="zip-input">Enter zip code</label>
+				<input type="text" id="zip-code" name="zip-input">
+				<input type="button" value="Search" class="button">
+			</form>
+		</div> <!-- close zip finder -->
+	</article> <!-- close zip wrapper -->
+</section>
+<section class="lower-content">
+	<article class="best-wifi-wrapper">
+		<div class="best-wifi-options">
+			<h3>Vacation spots with the best wifi</h3>
+			<ul>
+				<li>
+					<a>Los Angeles (90001)</a> -
+					<span class="excellent">Excellent</span>
+				</li>
+				<li>
+					<a>Honolulu (96795)</a> -
+					<span class="excellent">Excellent</span>
+				</li>
+				<li>
+					<a>New York (10003)</a> -
+					<span class="excellent">Excellent</span>
+				</li>
+			</ul>
+		</div> <!-- close best wifi options -->
+	</article> <!-- close best wifi wrapper-->
+</section> <!-- close lower content -->
+</section> <!-- close page container-->
+<footer>
+	<div class="footer-info">
+		<div class="copyright">© FindYourWifi <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</div>
+	</div>
+</footer>
+
+</body>
+</html>

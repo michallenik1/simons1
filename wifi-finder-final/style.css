@@ -1,0 +1,341 @@
+body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2 {
+	font-weight: 400;
+	display: inline-block;
+}
+
+h1 {
+	font-size: 40px;
+
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 16px;
+}
+
+/**** popup styles ***/
+
+.gray-bg {
+	z-index: 999;
+	background: #000;
+	opacity: 0.6;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.wifi-popup {
+	position: fixed;
+	width: 45%;
+	top: 15%;
+	left: 25%;
+	background: #fff;
+	padding: 20px 2.5%;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+	color: #515151;
+	z-index: 1000;
+}
+
+.close img {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.wifi-popup li:before {
+	margin-right: 10px;
+}
+
+.wifi-popup h3:after {
+	content: url('images/location.svg');
+	width: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid #497fab;
+	color: #464646;
+	font-style: italic;
+} 
+
+input[type="text"].error {
+	border: 2px solid #d36362;
+}
+
+.error-text {
+	font-size: 14px;
+	color: #d36362;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.button {
+	padding: 10px 15px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 16px;
+	box-shadow: 0px 2px 2px #214d71;
+	border: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.excellent {
+	color: #30b44a;
+}
+
+.fair {
+	color: #f9a35c;
+}
+
+.poor {
+	color: #d36362;
+}
+
+.page-container {
+	margin: 0 auto;
+	background: #fff;
+}
+
+.header {
+}
+
+.logo {
+	margin: 30px 20px;
+}
+
+.logo img {
+	height: 38px;
+}
+
+.logo span {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.logo a {
+	font-size: 34px;
+	font-weight: 600;
+	color: #265a84;
+	text-transform: uppercase;
+	vertical-align: center;
+}
+
+.banner {
+	width: 100%;
+	background: url('images/banner-bg.jpg');
+	background-position: 0 85%;
+	background-size: cover;
+	height: 450px;
+	display: inline-block;
+	text-align: center;
+	color: #515151;
+
+}
+
+.banner p {
+	margin: 15px 0;
+}
+
+.zip-finder-wrapper {
+	width: 80%;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 30px 20px;
+	border-radius: 5px;
+	margin: 120px auto;
+}
+
+label[for="zip-input"] {
+	margin: 20px 10px 0 0;
+	display: inline-block;
+	font-size: 22px;
+	color: #32435c;
+}
+
+.zip-finder input[type="button"] {
+	background:#497fab;
+	color: #fff;
+	margin-left: 10px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.lower-content {
+	margin: 0 auto;
+	width: 80%;
+	padding: 20px 0 30px;
+}
+
+.lower-content h3, .wifi-popup h3 {
+	color: #515151;
+	margin: 10px 0 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.lower-content ul {}
+
+.lower-content li, .wifi-popup li {
+	line-height: 2;
+	font-size: 20px;
+}
+
+.lower-content li:before, .wifi-popup li:before {
+	content: url('images/wifi-icon.svg');
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.lower-content ul li a, .wifi-popup ul li a {
+	color: #1d665d;
+	font-size: 20px;
+}
+
+footer {
+	background: #497fab;
+}
+
+.footer-info {
+	color: #fff;
+	text-align: center;
+	padding: 30px;
+}
+
+/************** mobile styles *******************/
+
+@media only screen and (max-width: 1050px) {
+
+	.zip-finder-wrapper {
+		margin: 60px auto;
+	}
+
+	h1 {
+		margin-bottom: 15px;
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	.banner p {
+		width: 90%;
+		margin: 10px auto;
+		line-height: 1.4;
+	}
+
+	label[for="zip-input"] {
+		font-size: 18px;
+	}
+
+	.lower-content h3, .wifi-popup h3 {
+		font-size: 20px;
+	}
+
+	.wifi-popup h3:after {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	.logo a {
+		font-size: 26px;
+	}
+
+	.logo img {
+		height: 32px;
+	}
+
+	.banner {
+		height: 300px;
+	}
+
+	.zip-finder-wrapper {
+		margin: 20px auto;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+
+	.banner p {
+		font-size: 14px;
+	}
+
+	label[for="zip-input"] {
+		margin: 15px 0 8px;
+	}
+
+	.banner input[type="text"] {
+		margin: 5px 0 10px;
+	}
+
+	.error-text {
+		display: block;
+		margin: 0 0 10px;
+	}
+
+	.lower-content {
+		padding: 10px 0 30px;
+	}
+
+	.lower-content ul li a, .wifi-popup ul li a {
+		font-size: 16px;
+	}
+
+	.wifi-popup {
+		width: 50%;
+		left: 22.5%;
+		padding: 20px 2.5%;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+	.banner {
+		height: 475px;
+	}
+
+	.lower-content {
+		padding: 0 0 30px;
+	}
+}
